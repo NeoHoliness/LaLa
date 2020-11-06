@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale1"/>
+	<title>Portfolio</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<style type="text/css">
+
+				/* The sidebar menu */
+		.sidenav {
+		  height: 100%; /* Full-height: remove this if you want "auto" height */
+		  width: 160px; /* Set the width of the sidebar */
+		  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+		  z-index: 1; /* Stay on top */
+		  top: 0; /* Stay at the top */
+		  left: 0;
+		  /*background-color: #111;*/ /* Black */
+		  overflow-x: hidden; /* Disable horizontal scroll */
+		  padding-top: 20px;
+		}
+
+		/* The navigation menu links */
+		.sidenav a {
+		  padding: 6px 8px 6px 16px;
+		  text-decoration: none;
+		  font-size: 25px;
+		  color: #818181;
+		  display: block;
+		}
+
+		/* When you mouse over the navigation links, change their color */
+		.sidenav a:hover {
+		  color: #f1f1f1;
+		}
+
+		/* Style page content */
+		.main {
+		  margin-left: 160px; /* Same as the width of the sidebar */
+		  padding: 0px 10px;
+		}
+
+		/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+		@media screen and (max-height: 450px) {
+		  .sidenav {padding-top: 15px;}
+		  .sidenav a {font-size: 18px;}
+		}
+
+		.slide {
+		  width: 100vh;
+		  height: 100vh;
+		  justify-content: space-between;
+		}
+
+		.wrapper {
+		  display: flex;
+		  flex-direction: row;
+		  width: 400vh;
+		  transform: rotate(90deg) translateY(-100vh);
+ 		  transform-origin: top left;
+		}
+
+		.outer-wrapper {
+		  width: 100vh;
+		  height: 100vw;
+		  transform: rotate(-90deg) translateX(-100vh);
+		  transform-origin: top left;
+		  overflow-y: scroll;
+		  overflow-x: hidden;
+		  position: absolute;
+		}
+
+		 ::-webkit-scrollbar {
+				  display: none;
+				}
+/*
+		.one {
+		  background: #efdefe;
+		}
+
+		.two {
+		  background: #a3f3d3;
+		}
+
+		.three {
+		  background: #0bbaa0;
+		}
+
+		.four {
+		  background: #00dfdf;
+		}
+*/
+
+	</style>
+</head>
+<body>
+		<!-- Side navigation -->
+	<div class="sidenav">
+		<h3>My Portfolio</h3>
+	  <a href="#">About</a>
+	  <a href="#">Services</a>
+	  <a href="#">Clients</a>
+	  <a href="#">Contact</a>
+	</div>
+
+	<!-- Page content -->
+	<div class="main">
+	  ...
+	</div>
+
+	<div class="outer-wrapper">
+  <div class="wrapper">
+    <div class="slide one">
+    	<img src="./Untitled-1.jpg">
+    </div>
+    
+    <div class="slide two">
+    	<img src="./IMG-20200322-WA0005.jpg">
+    </div>
+
+    <div class="slide three"></div>
+
+    <div class="slide four"></div>
+    
+  </div>
+</div>
+
+</body>
+</html>
